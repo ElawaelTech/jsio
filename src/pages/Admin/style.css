@@ -1,0 +1,141 @@
+.container-fluid {
+  min-height: calc(100vh - 160px);
+
+  padding-right: 15px;
+}
+
+.col-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderList {
+  padding-right: 310px;
+  top: 0;
+  position: absolute;
+  width: 220px;
+  background: #fff;
+  height: 100vh;
+  z-index: 9999999999;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+.ShowMenu {
+  margin-right: 0px;
+}
+.HideMenu {
+  margin-right: -240px;
+}
+
+.HeaderList ul {
+  list-style: none;
+  width: 200px;
+  padding-right: 50px;
+}
+.HeaderList ul li {
+  margin: 10px 10px;
+  width: 200px;
+  height: 30px;
+  margin-right: -40px;
+  text-align: right;
+  padding: 1px 3px;
+  transition: all 0.5s;
+}
+
+.HeaderList ul a {
+  font-family: stc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.HeaderList ul li:hover {
+  background: #64b9d9;
+  color: #fff;
+}
+
+.HeaderList ul li:hover > a {
+  background: #64b9d9;
+  color: #fff;
+}
+
+.table thead th {
+  top: -2px;
+  position: sticky;
+  text-align: center;
+  background: #64b9d9;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #eee;
+}
+.table tbody td {
+  color: #222;
+  font-size: 12px;
+  padding: 5px 0px;
+  border: 1px solid #edecea;
+  text-align: right;
+  z-index: -555555555;
+}
+
+
+.scroll {
+  min-width: 1500px;
+}
+:root {
+  --text-color: #005f93;
+  --bg-color: #000;
+}
+.table-responsive {
+  height: calc(100vh - 220px);
+}
+
+.Icon-imgContainer {
+  height: 55px;
+  width: 50px;
+  padding: 5px;
+  border-radius: 25px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.fotter {
+  /* position: absolute; */
+  top: auto;
+  bottom: 0;
+  /* position:absolute; */
+  /* width: 100vw; */
+}
+
+.home-col img {
+  max-width: 50%;
+}
+.home-col .company {
+  font-size: 80px;
+  color: chocolate;
+}
+@media screen and (max-width: 1060px) {
+  .home-col img {
+    max-width: 70%;
+  }
+  .home-col .company {
+    font-size: 40px;
+    color: chocolate;
+  }
+  .HeaderList ul li {
+    font-weight: bold;
+  }
+  .table thead th{
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .table tbody td{
+    font-weight: bold;
+    color:#444;
+    font-size: 12px;
+  }
+}
+
